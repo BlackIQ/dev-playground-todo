@@ -1,5 +1,5 @@
 # Session
-from database import session
+from db import session
 
 
 # Get DB

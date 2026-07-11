@@ -18,7 +18,7 @@ router = APIRouter(
 
 @router.get("", response_model=list[TaskRead])
 async def all_tasks(db: Session = Depends(get_db)):
-    return db.query(TaskModel).order_by(TaskModel.id.desc()).all()
+    return db.query(TaskModel).all()
 
 
 @router.get("/{task_id}", response_model=TaskRead)

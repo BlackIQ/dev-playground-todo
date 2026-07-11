@@ -5,6 +5,11 @@ from fastapi import FastAPI
 from database.base import Base
 from db import engine
 
+# Routes
+from routers import (
+    task
+)
+
 # Import all of Models
 import models
 
@@ -24,13 +29,29 @@ app = FastAPI(
 )
 
 
-# Endpoint: / - Method: GET
-@app.get("/")
+@app.get("/", tags=["Application"])
 async def root():
+    """
+    A simple route just to check server is running
+
+    - Endpoint: /
+    - Method: GET
+    """
+
     return {"message": "Server is functioning"}
 
 
-# Endpoint: /api - Method: GET
-@app.get("/api")
+@app.get("/api", tags=["Application"])
 async def api():
+    """
+    Where the whole application begins from
+
+    - Endpoint: /api
+    - Method: GET
+    """
+
     return {"message": "Welcome to Mahi Todo List API"}
+
+
+# Task router
+app.include_router(task.router, prefix="/api")

@@ -4,7 +4,6 @@ from sqlalchemy.orm import Session
 
 # Dependencies
 from dependencies import get_db
-
 # Task Model & Task Schema
 from models.task import TaskModel
 from schemas.task import Task, TaskRead

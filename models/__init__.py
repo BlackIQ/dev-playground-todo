@@ -1,2 +1,2 @@
 # Models
-from models.task import Task
+from models.task import TaskModel

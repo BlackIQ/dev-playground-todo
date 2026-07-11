@@ -6,7 +6,7 @@ from database.base import Base
 
 
 # Task Model
-class Task(Base):
+class TaskModel(Base):
     __tablename__ = "tasks"  # Table name
 
     id = Column(Integer, primary_key=True, index=True)

@@ -30,8 +30,6 @@ The backend focuses on learning the fundamentals of API development.
 - Request Validation
 - API Documentation with Swagger
 
----
-
 ### Frontend (React)
 
 The frontend focuses on connecting a React application with a backend API.
@@ -46,8 +44,6 @@ The frontend focuses on connecting a React application with a backend API.
 - Loading States
 - Error Handling
 
----
-
 ## Features
 
 Users can:
@@ -57,8 +53,6 @@ Users can:
 - Edit an existing task
 - Delete an existing task
 - Change task completion status
-
----
 
 ## About Playground
 
@@ -70,8 +64,6 @@ authentication, database relationships, and real-world application architecture.
 
 The main goal is learning through building.
 
----
-
 ## Contributors
 
 Built by:
@@ -80,3 +72,4 @@ Built by:
 - Frontend **React**: [Maedeh Sadat Khorasani](https://github.com/maedehskh80)
 
 This project is part of a collaborative learning journey between backend and frontend development.
+

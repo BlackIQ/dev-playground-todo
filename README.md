@@ -1,4 +1,4 @@
-# Todo List Application
+# Todo Application
 
 A simple full-stack Todo application built for learning modern web development.
 
